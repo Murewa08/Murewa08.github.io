@@ -18,3 +18,10 @@ padding: 20px 10px;
 background: white; /* pick a color */
 border-radius: 25%;
 }
+
+.project img {
+  width: 100%;       /* makes the image fit inside its project box */
+  height: auto;      /* keeps proportions */
+  display: block;    /* prevents inline overlap */
+  border-radius: 10px; /* optional: rounded corners */
+}
