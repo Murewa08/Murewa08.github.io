@@ -1,8 +1,10 @@
 #main-content {
     font-family: Arial, sans-serif;
-    background-color: #ecc2a3;
+    background-color: seashell;
     color: brown;
     padding: 20px;
+    border-radius: 10px;
+    border: 10px solid salmon;
 }
 
 a {
@@ -11,5 +13,5 @@ a {
 }
 
 a:hover {
-    color: lightblue;
+    color: #9999FF;
 }
