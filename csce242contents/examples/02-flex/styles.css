@@ -1,0 +1,93 @@
+/*Main Structure*/
+body {
+    font-family: Arial, Helvetica, sans-serifs;
+    background: #bde0fe;
+}
+
+#main-content {
+    width: 80%; /**Set width of main content**/
+    margin: auto; /**Center the main content**/
+}
+
+#main-header {
+    background: #ffafcc;
+}
+
+#content {
+
+}
+
+#main-footer {
+
+}
+
+/*Gallery*/
+#gallery section {
+    background: lightgray;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+}
+/*Navigation*/
+#main-nav {
+    
+}
+
+#main-nav ul {
+    padding-left: 0; /*Remove default padding, leaving no left space**/
+}
+#main-nav li {
+    list-style-type: none; /*Remove bullet points**/
+    background: #ffc8dd;
+    padding: 5px;
+    border-bottom: 1px solid #ffafcc;
+}
+
+#main-nav a {
+    text-decoration: none; /*Remove underline**/
+}
+/*Typography*/
+#main-header h1 {
+    text-align: center; /*Center the header text**/
+    padding-top: 10px;
+}
+
+/*Larger Devices*/
+@media (min-width: 768px) {
+    .columns {
+        display: flex;
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    .two {
+        flex: 2;
+    }
+
+    .three {
+        flex: 3;
+    }
+
+    .four {
+        flex: 4;
+    }
+}
+
+#main-nav ul {
+    display: flex;
+}
+
+#main-nav li {
+    background: transparent;
+    flex: 1;
+}
+
+#main-nav a {
+    color: darkslateblue;
+}
+
+#main-nav a:hover {
+    border-bottom: 1px solid darkslateblue;
+}
