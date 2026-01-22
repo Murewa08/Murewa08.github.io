@@ -1,0 +1,19 @@
+table, th, td{
+    border:3px solid black;
+    font-size: 15px;
+    padding: auto;
+    background-color: white;
+}
+
+body {
+    background-color: lightyellow;
+    font-family: sans-serif;
+}
+
+th {
+    background-color: orange;
+}
+
+td {
+    background-color: lightpink;
+}
