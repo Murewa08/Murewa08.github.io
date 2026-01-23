@@ -1,0 +1,44 @@
+/*Structure*/
+body {
+    background-color: #e6e6e6;
+}
+
+header, main, footer {
+    background-color: #FADDA0;
+}
+
+header {
+    color: #6699CC;
+}
+
+header h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+
+}
+
+footer {
+
+}
+/*Navigation*/
+#main-nav a {
+    background: transparent;
+    text-decoration: none;
+    color: white;
+}
+
+#main-nav ul {
+    text-decoration-style: none;
+    display: flex;
+}
+
+#main-nav li {
+    list-style-type: none;
+    padding: 10px;
+    flex: 1;
+    background-color: salmon;
+    text-align: center;
+}
