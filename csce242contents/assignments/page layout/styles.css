@@ -57,7 +57,6 @@ footer {
 #main-nav ul {
     text-decoration-style: none;
     display: flex; /*<-- Flexbox for horizontal navigation */
-    background-color: salmon;
 }
 
 #main-nav li {
@@ -67,6 +66,8 @@ footer {
     /*background-color: salmon;*/
     text-align: left;
     border: #6699CC 1px solid;
+    background-color: salmon;
+    text-align: center;
 }
 
 .ideas {
