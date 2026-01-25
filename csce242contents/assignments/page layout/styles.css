@@ -33,6 +33,27 @@ footer {
     color: white;
 }
 
+#main-nav a:hover {
+    color: darkorchid;
+}
+
+#Titles ul {
+    list-style-type: none;
+    display: flex;
+}
+
+#Titles li {
+    color: white;
+    background-color: #6699CC;
+    flex: 1;
+    margin: 2px;
+    padding: 3px;
+    text-align: center;
+}
+
+#images {
+    margin: 10px;
+}
 #main-nav ul {
     text-decoration-style: none;
     display: flex; /*<-- Flexbox for horizontal navigation */
@@ -54,11 +75,30 @@ footer {
     font-size: small;
     text-align: center;
     padding-top: 0px;
+    display: flex;
+    color: white;
 }
+
+.ideas h3 p{
+    display: inline-block;
+}
+
+#second-idea {
+    background-color: #b3cbe6;
+     margin: 1px 0px 1px 0px;
+    font-size: small;
+    text-align: center;
+    padding-top: 0px;
+    display: flex;
+    color: white;
+} 
 
 #content-1 {
     background: transparent;
     text-align: left;
-    margin-left: 0px;
+    margin: 15px;
     padding: 15px;
+    display: flex;
+    color: #6699CC;
+    text-decoration: solid;
 }
