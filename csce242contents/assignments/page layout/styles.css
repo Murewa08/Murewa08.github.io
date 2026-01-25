@@ -1,0 +1,64 @@
+/*Structure*/
+body {
+    background-color: #FADDA0;
+}
+
+/*header, main, footer {
+
+}*/
+
+header {
+    color: #6699CC;
+}
+
+header h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+
+}
+
+footer {
+    background-color: salmon;
+    text-align: center;
+    padding: 5px;
+    margin: 0px;
+}
+/*Navigation*/
+#main-nav a {
+    background: transparent;
+    text-decoration: none;
+    color: white;
+}
+
+#main-nav ul {
+    text-decoration-style: none;
+    display: flex; /*<-- Flexbox for horizontal navigation */
+    background-color: salmon;
+}
+
+#main-nav li {
+    list-style-type: none;
+    padding: 10px;
+    flex: 1;
+    /*background-color: salmon;*/
+    text-align: left;
+    border: #6699CC 1px solid;
+}
+
+.ideas {
+    margin: 1px 0px 1px 0px;
+    background-color: #6699CC;
+    font-size: small;
+    text-align: center;
+    padding-top: 0px;
+}
+
+#content-1 {
+    background: transparent;
+    text-align: left;
+    margin-left: 0px;
+    padding: 15px;
+}
