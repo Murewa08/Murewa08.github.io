@@ -27,9 +27,14 @@
     text-align: center;
 }
 
-#project {
+#project-container {
+    display: flex;
+}
+
+.project-parts {
     padding: 10px;
     background-color: lightblue;
+    max-width: 100%;
     height: auto;
     display: block;
     margin: 10px;
