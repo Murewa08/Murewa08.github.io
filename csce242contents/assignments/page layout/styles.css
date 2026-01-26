@@ -123,18 +123,17 @@ footer {
 
 /*Smaller Resolutions*/
 @media (max-width: 768px) {
-    #content-1 {
-        margin: 5px;
-        padding: 5px;
-        font-size: 14px;
-        display: block;
-    }
 
     #main-nav ul {
     display: block; 
     }
 
-    #Titles ul {
-    display: block;
+    #title-content-container {
+        display: block;
+        float: none;
+    }
+
+    .title-content {
+        text-align: center;
     }
 }
