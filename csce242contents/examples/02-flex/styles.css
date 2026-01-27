@@ -11,6 +11,7 @@ body {
 
 #main-header {
     background: #ffafcc;
+    position: relative;
 }
 
 #content {
@@ -21,6 +22,21 @@ body {
 
 }
 
+/*Header*/
+#logo {
+    margin: 10px;
+}
+
+#login-nav {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
+#login-nav li:not(:last-child):after {
+    content: "|";
+}
+
 /*Gallery*/
 #gallery section {
     background: lightgray;
@@ -28,6 +44,48 @@ body {
     border-radius: 5px;
     margin: 5px;
 }
+
+/*Square*/
+.area {
+    position: relative;
+    background: #cdb4db;
+}
+#square {
+    width: 100px;
+    height: 100px;
+    background: lightsalmon;
+
+    /*Postition absolute is in respect to the upper left hand corner*/
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.arrow {
+    font-size: 1.5em;
+    color: white;
+    position: absolute;
+    top: 50%;;
+}
+
+#prev {
+    left: 5%;
+}
+
+#next {
+    right: 5%;
+}
+
+#slide-desc {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    color: white;
+    background: rgba(225, 225, 225, 0.5);
+    padding: 5px;
+    max-width: 40%;
+}
+
 /*Navigation*/
 #main-nav {
     
@@ -54,6 +112,11 @@ body {
 
 /*Larger Devices*/
 @media (min-width: 768px) {
+    #content {
+        justify-content: space-between;
+        gap: 1em;
+    }
+    
     .columns {
         display: flex;
     }
