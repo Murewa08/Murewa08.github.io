@@ -1,0 +1,105 @@
+body {
+    background: gray;
+}
+
+header img {
+    margin-left: 0px;
+    width: 200px;
+}
+
+#main-header {
+    display: flex;
+    color: white;
+    background: black;
+    margin: 0px;
+}
+
+#main-header h1 {
+    /*margin-left: 20px;
+    align-self: center;*/
+    margin-top: 50px;
+    margin-left: 600px;
+}
+
+#main-nav a {
+    text-decoration: none; /*removes underline*/
+    color: white;
+    font-weight: bold;
+}
+
+#main-nav a:hover {
+    background: #510007;
+    padding: 15px;
+}
+
+#main-nav ul {
+    list-style-type: none; /*removes bullet points*/
+    display: flex;
+    gap: 60px;
+    background: #73000A;
+    padding: 15px;
+    margin: 0px;
+    justify-content: flex-end;
+}
+
+#image-1 {
+    width: 100%;
+}
+
+#first-paragraph {
+    color: black;
+    background: white;
+    padding: 30px;
+    margin: 0px;
+    text-align: center;
+}
+
+#image-2 {
+    width: 100%
+}
+
+#education-paragraph {
+    background:#73000A;
+    color: white;
+    padding:50px;
+    width: 50%;
+}
+
+#education-paragraph a {
+    background: black;
+    border: 2px white solid;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    /*margin-top: 50px;*/
+}
+
+#education-paragraph a:hover {
+    background: white;
+    color: #73000A;
+}
+
+#second-paragraph-content {
+    background: white;
+    display: flex;
+}
+
+#second-paragraph {
+    color: #73000A;
+    padding: 100px;
+    margin: 0px;
+    text-align: left;
+}
+
+#second-paragraph b {
+    color: #333333;
+}
+
+#main-footer {
+    background: black;
+    color: white;
+    padding: 12px;
+    border-top:1px white solid;
+}
