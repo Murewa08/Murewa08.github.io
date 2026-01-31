@@ -1,5 +1,5 @@
 body {
-    background: gray;
+    background: blueviolet;
     margin: 0px;
 }
 
@@ -183,7 +183,7 @@ header img {
     width: 50%;
     position: absolute;
     left: 60px;
-    top: 2180px;
+    top: 2600px;
      
 }
 
@@ -201,6 +201,51 @@ header img {
 #centers-paragraph a:hover {
     background: white;
     color: #73000A;
+}
+
+#get-connected-portion {
+    background: lightslategray;
+    text-align: center;
+    height: 460px;
+
+}
+
+#get-connected-portion h1 {
+    color: #73000A;
+    font-size: 70px;
+}
+
+#get-connected-links {
+    margin-top: 100px;
+}
+
+#get-connected-links ul {
+    gap: 60px;
+    list-style-type: none;
+    display: flex;
+}
+
+#get-connected-links a {
+    background: #73000A;
+    border: 2px white solid;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    justify-content: center; 
+
+}
+
+#get-connected-links a:hover {
+    background: white;
+    color: #73000A;
+    border: 2px #73000A solid;
+}
+
+#smc-link {
+    text-decoration: none;
+    color: #73000A;
+    font-size: 25px;
+    margin-left: -2%;
 }
 
 #main-footer {
