@@ -1,5 +1,5 @@
 body {
-    background: blueviolet;
+    background: white;
     margin: 0px;
 }
 
@@ -183,7 +183,7 @@ header img {
     width: 50%;
     position: absolute;
     left: 60px;
-    top: 2600px;
+    top: 3310px;
      
 }
 
@@ -204,7 +204,7 @@ header img {
 }
 
 #get-connected-portion {
-    background: lightslategray;
+    background: #E6E6E6;
     text-align: center;
     height: 460px;
 
@@ -253,4 +253,28 @@ header img {
     color: white;
     padding: 12px;
     border-top:1px white solid;
+}
+
+#colleges_schools_section {
+    background: #73000A;
+    height: 470px;
+    color: white;
+    justify-content: left;
+    display: block;
+    padding: 30px;
+}
+
+#colleges_schools_section a {
+    text-decoration: none;
+    color: white;
+    text-align: left;
+}
+
+#colleges_schools_section h4 {
+    margin-top: 1px;
+}
+
+#colleges_schools_section img {
+    margin-left: 0px;
+    width: 250px;
 }
