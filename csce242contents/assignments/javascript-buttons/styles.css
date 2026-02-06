@@ -1,0 +1,40 @@
+body {
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+    text-align: center;
+}
+
+#header h1 {
+    color: #5A2A82;
+}
+
+#header h3 {
+    color: #FF4FA3;
+}
+
+.content-boxes {
+    background-color: #FADADD;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    display: block;
+    right: 40px;
+    border: 3px #8C6AA8 solid;
+    color: #5A2A82;
+}
+
+#main-content {
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+}
+
+footer {
+    color: #5A2A82;
+    text-align: center;
+}
+
+/*Smaller Resolutions*/
