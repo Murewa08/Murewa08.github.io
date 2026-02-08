@@ -11,7 +11,7 @@ body {
     color: #5A2A82;
 }
 
-#header h3 {
+#header h2 {
     color: #FF4FA3;
 }
 
@@ -24,6 +24,26 @@ body {
     right: 40px;
     border: 3px #8C6AA8 solid;
     color: #5A2A82;
+    padding: 5px;
+}
+
+#triangle {
+   margin: 24px auto 0; /* centers horizontally and gives top spacing */
+   width: 0px;
+   height: 0px;
+   border-right: 60px solid transparent;
+   border-left: 60px solid transparent; 
+   border-bottom: 100px solid #FF4D4D;
+   display: none; /* Initially hidden */
+}
+
+.content-boxes img {
+    width: 35%;
+    /*border-top: 4px red solid;
+    border-bottom: 4px blue solid;
+    border-left: 4px purple solid;
+    border-right: 4px green solid;
+    padding: 5px;*/
 }
 
 #main-content {
@@ -38,3 +58,18 @@ footer {
 }
 
 /*Smaller Resolutions*/
+@media (max-width: 800px) {
+    #main-content {
+        flex-direction: column;   /* stack vertically */
+        align-items: center;      /* center horizontally */
+        gap: 0px;                 /* remove gap between boxes */
+    }
+
+    .content-boxes {
+        width: 100%;
+    }
+
+    .content-boxes img {
+        width: 20%;
+    }
+}

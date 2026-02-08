@@ -3,26 +3,31 @@
     <head>
         <title>Assignment 7 page</title>
         <link rel="stylesheet" href="styles.css">
-        <script href="script.js"></script>
     </head>
     <body>
         <div id="header">
             <h1>Assignment 7</h1>
-            <h3>Introduction To JavaScript</h3>
+            <h2>Introduction To JavaScript</h2>
         </div>
         <div id="main-content">
-            <div class="content-boxes">
+            <div class="content-boxes" id="geometry-box">
                 <h4>Geometry</h4>
+                <div id="triangle">
+                </div>
             </div>
             <div class="content-boxes">
                 <h4>Select A Date:</h4>
+                <input type="date" id="date-input" />
+                <p id="message"></p>
             </div>
             <div class="content-boxes">
                 <h4>Frame Image</h4>
+                <img src="images/OIP (2).jpg" id="sun-image">
             </div>
         </div>
         <footer>
             <p>@murewa08.com</p>
         </footer>
     </body>
+    <script src="script.js"></script>
 </html>
