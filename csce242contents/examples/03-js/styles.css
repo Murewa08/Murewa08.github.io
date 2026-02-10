@@ -1,7 +1,12 @@
 /*Main Structure*/
+:root {
+    --main-background: #bde0fe;
+    --main-headers: purple;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serifs;
-    background: #bde0fe;
+    background: var(--main-background);
 }
 
 #main-content {
@@ -14,6 +19,13 @@ body {
     position: relative;
 }
 
+#gallery section {
+    background-color: white;
+    padding: 10px;
+    margin: 15px;
+    min-width: 29%;
+    min-height: 250px;
+}
 #content {
 
 }
@@ -39,7 +51,7 @@ body {
 
 /*Gallery*/
 #gallery section {
-    background: lightgray;
+    background: #E4D1E4;
     padding: 5px;
     border-radius: 5px;
     margin: 5px;
@@ -87,6 +99,12 @@ body {
 }
 
 /*Navigation*/
+#toggle-nav div {
+    width: 25px;
+    height: 2px;
+    background: darkslateblue;
+    margin: 6px 0;
+}
 #main-nav {
     
 }
@@ -104,12 +122,57 @@ body {
 #main-nav a {
     text-decoration: none; /*Remove underline**/
 }
+#ball-playground {
+    position: relative;
+}
+#ball {
+    width: 25px;
+    height: 25px;
+    background: magenta;
+    border-radius: 25px;
+    position: absolute;
+}
+
+.bounce {
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+input {
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+@keyframes bounce {
+    0% {
+        top: 0px;
+        background: magenta;
+    }
+    25% {
+        background: orange;
+    }
+    50% {
+        top: 200px;
+        background: green;
+    }
+    75% {
+        background: red;
+    }
+    100% {
+        top: 0px;
+        background: pink;
+    }
+}
 /*Typography*/
 #main-header h1 {
     text-align: center; /*Center the header text**/
     padding-top: 10px;
 }
 
+.hide-small {
+    display: block;
+}
 /*Larger Devices*/
 @media (min-width: 768px) {
     #content {
@@ -136,21 +199,29 @@ body {
     .four {
         flex: 4;
     }
-}
 
-#main-nav ul {
+    #main-nav ul {
     display: flex;
 }
 
-#main-nav li {
-    background: transparent;
-    flex: 1;
-}
+    #main-nav li {
+        background: transparent;
+        flex: 1;
+    }
 
-#main-nav a {
-    color: darkslateblue;
-}
+    #main-nav a {
+        color: darkslateblue;
+    }
 
-#main-nav a:hover {
-    border-bottom: 1px solid darkslateblue;
+    #main-nav a:hover {
+        border-bottom: 1px solid darkslateblue;
+    }
+
+    #toggle-nav {
+        display: none;
+    }
+
+    .hide-small {
+        display: flex;
+    }
 }

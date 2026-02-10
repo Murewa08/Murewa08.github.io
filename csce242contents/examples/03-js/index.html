@@ -9,39 +9,39 @@
             <header id="main-header">
                 <h1>Flex Demonstration</h1>
                 <nav id="main-nav">
-                    <ul>
+                    <div id="toggle-nav">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <ul class="hide-small">
                        <li><a href="index.html">Home</a></li>
                        <li><a href="about.html">About</a></li>
                        <li><a href="#">Pictures</a></li>
                        <li><a href="#">Contact Us</a></li>
                     </ul>
                 </nav>
-                <!--<main id="content">
-                    <h2>My Stuff</h2>
-                    <div class="columns">
-                        <section class="one">
-                            <h3>Title</h3>
-                            <p>I'm some Text</p>
-                        </section>
-                        <section class="one">
-                            <h3>Title</h3>
-                            <p>I'm some Text</p>
-                        </section>
-                        <section class="one">
-                            <h3>Title</h3>
-                            <p>I'm some Text</p>
-                        </section>
-                    </div>
-                </main>-->
             </header>
             <main id="content">
-                <div class="columns">
+                <div id="gallery" class="columns">
                     <section>
                         <button id="btn-show-message">Show</button>
                         <p id="p-message"></p>
                     </section>
                     <section>
                         <p><a id="a-click" href="#">Click Me</a></p>
+                    </section>
+                    <section id="ball-playground">
+                        <button id="btn-bounce">Start</button>
+                        <div id="ball"></div>
+                    </section>
+                    <section>
+                        <h3>Plant Health</h3>
+                        <p>
+                            <label for="txt-num-days">Enter Number of Days: </label>
+                            <input type="number" id="txt-num-days">
+                        </p>
+                        <p id="p-plant-message"></p>
                     </section>
                 </div>
             </main>
