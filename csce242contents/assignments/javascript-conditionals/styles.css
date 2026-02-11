@@ -1,0 +1,21 @@
+body {
+    background: #F6F2EA;
+    font-family: "Playfair Display", serif;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    color: #4E4032;
+}
+
+header h2 {
+    color: #E1BD5D;
+}
+
+button {
+    background: transparent;
+    border: #E1BD5D;
+}
