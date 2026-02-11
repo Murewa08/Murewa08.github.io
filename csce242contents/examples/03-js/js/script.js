@@ -12,7 +12,7 @@ document.getElementById("a-click").onclick = (e) => {
     e.currentTarget.innerHTML = "Clicked";
 }
 
-//sart band stop ball bouncing
+//sart and stop ball bouncing
 document.getElementById("btn-bounce").onclick = (e) => {
     const ball = document.getElementById("ball");
     if(e.currentTarget.innerHTML.toLowerCase()  == "start") {

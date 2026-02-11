@@ -18,4 +18,28 @@ header h2 {
 button {
     background: transparent;
     border: #E1BD5D;
+    color: #A68A64;
+    font: medium;
+}
+
+#btns {
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+    color: #C1AD93;
+}
+
+.sections {
+    background: white;
+    border: 1px solid #E1BD5D;
+}
+
+#section-1 {
+    display: none;
+    width: 100%;
+}
+
+#section-2 {
+    display: none;
+    width: 100%;
 }
