@@ -49,3 +49,69 @@ document.getElementById("txt-num-days").onchange = (e) => {
 document.getElementById("toggle-nav").onclick = () => {
     document.querySelector("#main-nav ul").classList.toggle("hide-small");
 }
+
+/*Sart, Pause, Stop Buttons*/
+const pDisplay = document.getElementById("p-count-display");
+let count = 0;
+let countInterval;
+const startButton = document.getElementById("btn-start-count");
+
+const startClicked = () => {
+    countInterval = setInterval(()=>{
+        startButton.disabled = true;
+        pDisplay.innerHTML = count++;
+    }, 500);
+}
+
+const pauseClicked = (e) => {
+    startButton.disabled = false;
+   clearInterval(countInterval);
+}
+
+const stopClicked = (e) => {
+    startButton.disabled = false;
+   clearInterval(countInterval);
+   count = 0;
+   pDisplay.innerHTML = count;
+}
+
+document.getElementById("btn-start-count").onclick = startClicked;
+document.getElementById("btn-pause-count").onclick = pauseClicked;
+document.getElementById("btn-stop-count").onclick = stopClicked;
+
+/*Display the Date*/
+setInterval(()=>{
+    const today = new Date();
+    const month = today.getMonth();
+    const day = today.getDate();
+    const year = today.getFullYear();
+    const seconds = today.getSeconds();
+    const minutes = today.getMinutes();
+    const hours = today.getHours();
+
+    document.getElementById("p-date").innerHTML = `${month + 1}/${day}/${year}, ${hours}:${minutes}:${seconds}`;
+}, 500);
+
+/*Money Raising section*/
+
+const amountEntered = () => {
+    const errorMessage = document.getElementById("p-error-message");
+    const amount = document.getElementById("txt-donation-amount").value;
+    if(amount < 0)
+    {
+        errorMessage.innerHTML = "Invalid number! Try again.";
+    }
+    else if(isNaN(amount))
+    {
+        errorMessage.innerHTML = "Not a number! Try again.";
+    }
+    else if(amount == 0)
+    {
+        errorMessage.innerHTML = "Amount must be greater than 0!";
+    }
+    else
+    {
+        errorMessage.innerHTML = "";
+    }
+}
+document.getElementById("txt-donation-amount").onchange = amountEntered;

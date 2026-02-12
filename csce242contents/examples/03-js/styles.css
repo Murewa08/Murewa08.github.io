@@ -1,7 +1,10 @@
-/*Main Structure*/
+/*Main Structure
+Get remaining code from Ms. Portia's example and modify it
+*/
 :root {
     --main-background: #bde0fe;
     --main-headers: purple;
+    --amount:50%;
 }
 
 body {
@@ -50,6 +53,12 @@ body {
 }
 
 /*Gallery*/
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 #gallery section {
     background: #E4D1E4;
     padding: 5px;
@@ -98,7 +107,14 @@ body {
     max-width: 40%;
 }
 
+/*Buttons*/
+
 /*Navigation*/
+#p-date {
+    /*display: absolute;*/
+    top: 10px;
+    color: white;
+}
 #toggle-nav div {
     width: 25px;
     height: 2px;
@@ -164,6 +180,12 @@ input {
         background: pink;
     }
 }
+/***Thermometer
+Get code from Ms. Portia's example and modify it to fit the money raising section
+
+*/
+
+
 /*Typography*/
 #main-header h1 {
     text-align: center; /*Center the header text**/
