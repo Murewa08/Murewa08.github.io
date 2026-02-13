@@ -17,6 +17,15 @@ header img {
     font-family: "Playfair Display", sans-serif;
 }
 
+#navs a {
+    color: #6B7A8F;
+    text-decoration: none;
+}
+
+#navs a:hover {
+    color: #AA336A;
+}
+
 #navs h2 {
     font-size: 36px;
 }
@@ -62,17 +71,43 @@ main {
     height: 75px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    margin-top: 0px;
+    margin-top: -15px;
     font-size: 36px;
     padding-top: 10px;
+    text-shadow: #6B7A8F 1px 1px 1px;
 }
 
 #main-question {
-    margin-top: 63px;
+    margin-bottom: 0;
 }
 
 footer {
     height: 203.23px;
     background: #EDBABA;
     margin-bottom: 0;
+    font-family: "Playfair Display", sans-serif;
+    text-align: center;
+}
+
+#btn-account {
+    background: #F6A67D;
+    border-radius: 40px;
+    width: 592.12px;
+    height: 75.73px;
+    font-size: 40px;
+    font-family: "Playfair Display", sans-serif;
+    margin-top: 35px;
+}
+
+#btn-account:hover {
+    background: #DD9571;
+}
+
+footer a {
+    color: #FCF9C5;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #CFCFE1;
 }
