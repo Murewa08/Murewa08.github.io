@@ -32,6 +32,7 @@ button {
 .sections {
     background: white;
     border: 1px solid #E1BD5D;
+    text-align: center;
 }
 
 #section-1 {

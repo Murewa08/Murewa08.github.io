@@ -41,7 +41,14 @@
 }
 
 #project-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /*padding: 24px 16px;*/
+    box-sizing: border-box;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
 }
 
 .project-parts {
@@ -56,6 +63,9 @@
     font-family: Arial, sans-serif;
     display: inline-block; 
     text-align: center;
+    flex: 0 1 calc(33.33% - 24px);
+    min-width: 240px;
+    max-width: 360px;
 }
 
 .project-parts img {
