@@ -15,11 +15,29 @@ header h2 {
     color: #E1BD5D;
 }
 
+#toggle-1 {
+    border-left: 13px transparent solid;
+    border-right: 13px transparent solid;
+    border-top: 10px #4E4032 solid;
+    width: 0px;
+    display: none;
+}
+
+#toggle-2 {
+    border-left: 13px transparent solid;
+    border-right: 13px transparent solid;
+    border-bottom: 10px #4E4032 solid;
+    width: 0px;
+    display: none;
+}
+
+
 button {
     background: transparent;
-    border: #E1BD5D;
+    font-family: "Playfair Display", serif;
+    border: transparent;
     color: #A68A64;
-    font: medium;
+    font-size: 18px;
 }
 
 #btns {
@@ -27,6 +45,25 @@ button {
     justify-content: center;
     gap: 1px;
     color: #C1AD93;
+}
+
+#ex-1-section {
+    display: block;
+}
+
+#ex-2-section {
+    display: block;
+}
+
+#btns button:hover {
+    color: #4E4032;
+    cursor: pointer;
+}
+
+#btns :not(:last-child):after {
+    content: " |";
+    color: #C1AD93;
+    justify-content: center;
 }
 
 .sections {
@@ -43,4 +80,45 @@ button {
 #section-2 {
     display: none;
     width: 100%;
+}
+
+footer {
+    text-align: center;
+    color: #A68A64;
+    font-size: 15px;
+}
+
+/*Smaller Resolutions*/
+@media (max-width: 800px) {
+
+    #btns {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    #btns :not(:last-child):after {
+        content: "";
+    }
+
+    #btns button {
+        display: block;
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+    }
+
+    #toggle-1 {
+        display: block;
+        margin: 0 0 auto 0;
+        align-self: flex-start;
+    }
+
+    #toggle-2 {
+        display: none;
+        margin: 0 auto 0 0;
+        align-self: flex-start;
+    }
+
 }
