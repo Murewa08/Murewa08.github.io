@@ -11,7 +11,7 @@ header img {
 }
 #navs {
     background: #F8D7E0;
-    height: 91px;
+    /*height: 91px;*/
     display: flex;
     color: #6B7A8F;
     align-items: center;
@@ -306,4 +306,41 @@ footer a:hover {
     position: absolute;
     top: 1977px;
     left: 1170px;
+}
+
+/*Smaller Resolutions*/
+@media (max-width: 1200px) {
+
+    #navs {
+        display: block;
+        text-align: center;
+        margin-top: -30px;
+    }
+
+    header img {
+        height: 450px;
+        margin-top: 150px;
+        margin-top: auto;
+    }
+
+    #navs ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+        gap: 20px;
+    }
+
+    #navs ul li {
+        border: 1.5px solid white;
+    }
+
+    .destinations-row {
+        flex-direction: column;
+        gap: 50px;
+        margin: 50px 0;
+    }
+
+    .dest-info p {
+        justify-self: center;
+    }
 }
