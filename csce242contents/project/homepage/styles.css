@@ -1,3 +1,9 @@
+:root {
+    --primary: #F8D7E0;
+    --secondary: #EDBABA;
+    --secondary-2: #6B7A8F;
+}
+
 body {
     margin: 0;
     display: flex;
@@ -10,7 +16,7 @@ header img {
     width: 100%;
 }
 #navs {
-    background: #F8D7E0;
+    background: var(--primary);
     /*height: 91px;*/
     display: flex;
     color: #6B7A8F;
@@ -19,7 +25,7 @@ header img {
 }
 
 #navs a {
-    color: #6B7A8F;
+    color: var(--secondary-2);
     text-decoration: none;
 }
 
@@ -42,7 +48,7 @@ header img {
 
 main {
     /*height: 1265px;*/
-    background: #F8D7E0;
+    background: linear-gradient(0deg, #F8D7E0, #EDBABA, #F8D7E0);
     font-family: "Poppins", sans-serif;
     text-align: center;
     font-size: 45px;
@@ -66,19 +72,21 @@ main {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     margin-bottom: 0;
+    border: 4px #BE9595 solid;
 }
 
 .dest-info p {
     text-align: center;
-    background: white;
+    background: #FCFBF9;
     width: 385px;
     height: 75px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    margin-top: -18px;
+    margin-top: -20px;
     font-size: 36px;
     padding-top: 10px;
     text-shadow: #6B7A8F 1px 1px 1px;
+    border: 4px #BE9595 solid;
 }
 
 #main-question {
@@ -87,7 +95,7 @@ main {
 
 footer {
     height: 203.23px;
-    background: #EDBABA;
+    background: var(--secondary);
     margin-bottom: 0;
     font-family: "Playfair Display", sans-serif;
     text-align: center;
@@ -116,7 +124,7 @@ footer a:hover {
     color: #CFCFE1;
 }
 
-/*Stars*/
+/*Stars
 .star {
     color: white;
     font-size: 50px;
@@ -306,7 +314,7 @@ footer a:hover {
     position: absolute;
     top: 1977px;
     left: 1170px;
-}
+}*/
 
 /*Smaller Resolutions*/
 @media (max-width: 1200px) {

@@ -19,31 +19,29 @@ const Ex1Clicked = () => {
         if(currentMinute >= 0 && currentMinute < 15)
         {
             timeLeft.innerHTML = (30 - currentMinute) + " minutes";
-            funMessage.innerHTML = "Its almost time for class! Time to sprint, athlete!";
+            funMessage.innerHTML = "Its almost time for class! Time to sprint, athlete! &#127939";
             minutesSlider.value = currentMinute;
         }
-
-        
-    if(currentMinute >= 15 && currentMinute < 30)
-        {
-            timeLeft.innerHTML = (30 - currentMinute) + " minutes";
-            funMessage.innerHTML = " We can still make a pit stop at Starbucks!";
-            minutesSlider.value = currentMinute;
+        else if(currentMinute >= 15 && currentMinute < 30)
+            {
+                timeLeft.innerHTML = (30 - currentMinute) + " minutes";
+                funMessage.innerHTML = " We can still make a pit stop at Starbucks! &#9749";
+                minutesSlider.value = currentMinute;
+            }
         }
-    }
 
     else if(currentHour < 8) {
         if(currentMinute >= 30 && currentMinute <= 45) 
         {
             timeLeft.innerHTML = (60 - currentMinute) + 30 + " minutes";
-            funMessage.innerHTML = "We've got quite some time. Let's review some notes!";
+            funMessage.innerHTML = "We've got quite some time. Let's review some notes! &#128211 ";
             minutesSlider.value = currentMinute;
         }
 
         if(currentMinute > 45)
         {
             timeLeft.innerHTML = (60 - currentMinute) + 30 + " minutes";
-            funMessage.innerHTML = "We have more than 45 minutes! Feel free to take a nap!";
+            funMessage.innerHTML = "We have more than 45 minutes! Feel free to take a nap! &#128554";
             minutesSlider.value = currentMinute;
         }
     }
@@ -60,25 +58,25 @@ const Ex2Clicked = () => {
         if(currentMinute < 15)
         {
             countdownTimer.innerHTML = (30 - currentMinute) + " minutes";
-            countdownMessage.innerHTML = "It's almost time for class! Time to sprint, athlete!";
+            countdownMessage.innerHTML = "It's almost time for class! Time to sprint, athlete! &#127939 ";
             //minutesSlider.value = currentMinute;
         }
         else if((30 - currentMinute) <= 15 && (30 - currentMinute) >= 10)
         {
             countdownTimer.innerHTML = (30 - currentMinute) + " minutes";
-            countdownMessage.innerHTML = " We can still make a pit stop at Starbucks!";
+            countdownMessage.innerHTML = " We can still make a pit stop at Starbucks! &#9749";
             //minutesSlider.value = currentMinute;
         }
         else if((30 - currentMinute) >= 5 && (30 - currentMinute) <= 10)
         {
             countdownTimer.innerHTML = (30 - currentMinute) + " minutes";
-            countdownMessage.innerHTML = "We're getting close to class time! Let's get ready! ";
+            countdownMessage.innerHTML = "We're getting close to class time! Let's get ready! &#128756";
             //minutesSlider.value = currentMinute;
         }
         else if((30 - currentMinute) >= 0 && (30 - currentMinute) <= 5)
         {
             countdownTimer.innerHTML = (30 - currentMinute) + " minutes";
-            countdownMessage.innerHTML = "Quick! Grab your materials and get to class!";
+            countdownMessage.innerHTML = "Quick! Grab your materials and get to class!  &#127939";
             //minutesSlider.value = currentMinute;
         }
     }
