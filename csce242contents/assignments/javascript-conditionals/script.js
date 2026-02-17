@@ -83,7 +83,7 @@ const Ex2Clicked = () => {
     else if(currentHour == 8) {
         if((30 - currentMinute) >= -5 && (30 - currentMinute) < 0)
         {
-            countdownTimer.innerHTML = "Class started " + Math.abs(30 -currentMinute) + " minutes ago";
+            countdownTimer.innerHTML = "Class started " + Math.abs(30 - currentMinute) + " minutes ago";
             //countdownMessage.innerHTML = "Class has already started! Better late than never!";
         }
         else if((30 - currentMinute) >= -15 && (30 - currentMinute) < -5)
