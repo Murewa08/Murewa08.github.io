@@ -9,22 +9,116 @@ body {
     height: 500px;
     border: 7px white solid;
     justify-self: center;
+    display: flex;
+    align-items: center;
+    
 }
 
 #fish-bowl-cover {
     background: #E6E6E6;
     border-radius: 260px;
     width: 500px;
-    height: 100px;
+    height: 50px;
     justify-self: center;
     border: 7px white solid;
-    border-radius: 10px;
+    position: absolute;
 }
 
 #water {
-    background: #6666ff;
+    background: linear-gradient(0deg, #3495C7, #B0DBF1);
     border-radius: 260px;
-    width: 400px;
-    height: 300px;
+    width: 510px;
+    height: 410px;
     justify-self: center;
+    margin-left: 45px;
+    margin-top: 50px;
 }
+
+.bubbles {
+    position:absolute;
+}
+
+.bubbles li {
+    position: absolute;
+    display: block;
+    list-style-type: none;
+    width: 20px;
+    height: 20px;
+    background: white;
+    /*box-shadow: inset 5px -5px 10px white;
+    border: 2px white solid;*/
+    border-radius: 10px;
+    animation: rotate 5s linear infinite;
+
+}
+
+.bubbles li:nth-child(1) {
+    left: 35%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.bubbles li:nth-child(2) {
+    left: 75%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 2s;
+    animation-duration: 10s;
+}
+
+/*.bubbles li:nth-child(3) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+}
+
+.bubbles li:nth-child(4) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+}
+
+.bubbles li:nth-child(5) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+}
+
+.bubbles li:nth-child(6) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+}
+
+.bubbles li:nth-child(7) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+}
+
+.bubbles li:nth-child(8) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+}
+
+.bubbles li:nth-child(9) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+}
+
+.bubbles li:nth-child(10) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+}*/
