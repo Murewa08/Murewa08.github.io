@@ -1,0 +1,11 @@
+body {
+    background: #f8d7e0;
+}
+
+#fish-bowl {
+    background: gray;
+    border-radius: 250px;
+    width: 500px;
+    height: 500px;
+    border: 3px white solid;
+}
