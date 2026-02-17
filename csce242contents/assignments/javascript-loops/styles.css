@@ -3,9 +3,28 @@ body {
 }
 
 #fish-bowl {
-    background: gray;
-    border-radius: 250px;
-    width: 500px;
+    background: #E6E6E6;
+    border-radius: 260px;
+    width: 600px;
     height: 500px;
-    border: 3px white solid;
+    border: 7px white solid;
+    justify-self: center;
+}
+
+#fish-bowl-cover {
+    background: #E6E6E6;
+    border-radius: 260px;
+    width: 500px;
+    height: 100px;
+    justify-self: center;
+    border: 7px white solid;
+    border-radius: 10px;
+}
+
+#water {
+    background: #6666ff;
+    border-radius: 260px;
+    width: 400px;
+    height: 300px;
+    justify-self: center;
 }
