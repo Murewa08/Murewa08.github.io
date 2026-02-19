@@ -29,6 +29,12 @@ body {
     min-width: 29%;
     min-height: 250px;
 }
+
+/*Slideshow*/
+#slideshow {
+    position: relative;
+}
+
 #content {
 
 }
@@ -83,18 +89,21 @@ body {
 }
 
 .arrow {
-    font-size: 1.5em;
-    color: white;
+    display: block;
+    font-size: 5em;
+    text-decoration: none;
+    font-weight: 600;
     position: absolute;
-    top: 50%;;
+    top: 30%;
+    color: white;
 }
 
-#prev {
-    left: 5%;
-}
-
-#next {
+#arrow-next {
     right: 5%;
+}
+
+#arrow-prev {
+    left: 5%;
 }
 
 #slide-desc {
@@ -123,6 +132,16 @@ body {
 }
 #main-nav {
     
+}
+
+/*tables*/
+table {
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 5px;
+    border: 1px solid darkslategray;
 }
 
 #main-nav ul {
@@ -195,6 +214,11 @@ Get code from Ms. Portia's example and modify it to fit the money raising sectio
 .hide-small {
     display: block;
 }
+
+/*.hidden {
+    display: none;
+}*/
+
 /*Larger Devices*/
 @media (min-width: 768px) {
     #content {
