@@ -34,7 +34,111 @@ body {
     margin-top: 50px;
 }
 
-.bubbles {
+#bubbles {
+    list-style-type: none;
+}
+
+#bubble-1 {
+    left: 570px;
+    width: 25px;
+    height: 25px;
+    background: white;
+    border-radius: 25px;
+    position: absolute;
+}
+
+#bubble-2 {
+    left: 670px;
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius: 25px;
+    position: absolute;
+}
+
+#bubble-3 {
+    left: 610px;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 25px;
+    position: absolute;
+}
+
+#bubble-4 {
+    left: 730px;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 25px;
+    position: absolute;
+}
+
+#bubble-5 {
+    left: 520px;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 25px;
+    position: absolute;
+}
+
+/*Edit Positions of bubble 6 - 8*/
+#bubble-6 {
+    left: 670px;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 25px;
+    position: absolute;
+}
+
+#bubble-7 {
+    left: 670px;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 25px;
+    position: absolute;
+}
+
+#bubble-8 {
+    left: 670px;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 25px;
+    position: absolute;
+}
+
+
+
+.float {
+    animation-name: float;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes float {
+    0% {
+        top: 450px;
+    }
+    25% {
+        top: 350px;
+    }
+    50% {
+        top: 250px;
+    }
+    75% {
+        top: 150px;
+    }
+    100% {
+        top: 100px;
+    }
+}
+/**
+
+/*.bubbles {
     position:absolute;
 }
 
@@ -46,7 +150,7 @@ body {
     height: 20px;
     background: white;
     /*box-shadow: inset 5px -5px 10px white;
-    border: 2px white solid;*/
+    border: 2px white solid;
     border-radius: 10px;
     animation: rotate 5s linear infinite;
 
@@ -67,7 +171,7 @@ body {
     animation-duration: 10s;
 }
 
-/*.bubbles li:nth-child(3) {
+.bubbles li:nth-child(3) {
     left: 35%;
     width: 150px;
     height: 150px;
