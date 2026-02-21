@@ -1,0 +1,67 @@
+:root {
+    --primary: #EFEAF3;
+    --secondary: #5A2A82;
+    --secondary-2: #FF4FA3;
+    --secondary-3: #CCCC00;
+    --secondary-4: #E5E5E5;
+}
+body {
+    background: var(--primary);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--secondary);
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    color: var(--secondary);
+}
+
+header h2 {
+    color: var(--secondary-2);
+}
+
+main {
+    text-align: center;
+}
+
+#mood-selector {
+    background: var(--secondary-4);
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
+}
+
+#mood-options ul {
+    list-style-type: none;
+}
+
+#happy-songs ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+#happy-songs a {
+    color: var(--secondary);
+}
+
+#happy-songs a:hover {
+    color: var(--secondary-3);
+}
+
+#disney-songs ul {
+    list-style-type: none;
+}
+
+#disney-songs a {
+    color: var(--secondary);
+}
+
+#disney-songs a:hover {
+    color: var(--secondary-3);
+}
+
+footer {
+    text-align: center;
+}
