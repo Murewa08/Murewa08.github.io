@@ -55,71 +55,28 @@ header img {
     margin-top: -5px;
 }
 
-#who-we-are {
-    background: var(--primary);
-    height: 398px;
-    align-content: center;
-}
-
-#our-mission {
-    background: var(--secondary-3);
-    height: 369px;
-    align-content: center;
-    display: flex;    
-}
-
-#our-mission img {
-    width: 230px;
-    height: 345px;
-    border-radius: 500px;
-    margin-left: 162px;
-    margin-top: 12px;
-}
-
-#our-vision {
-    background: var(--primary);
-    height: 369px;
-    align-content: center;
+main {
     display: flex;
+    height: 975px;
 }
 
-#our-vision img {
-    width: 231px;
-    height: 346px;
-    border-radius: 50px;
-    margin-left: 200px;
-    margin-top: 12px;
-}
-.card-background {
-    background: var(--secondary-5);
-    border-radius: 20px;
-    box-shadow: 0px 3px black;
-    width: 673px;
-    height: 278px;
-    align-content: center;
+#decor {
+    background: var(--secondary-5) ;
+    width: 535px;
 }
 
-.card-background p {
-    font-size: 32px;
-    font-family: "Poppins", sans-serif;
-}
-
-.card-background h4 {
-    font-size: 40px;
-    margin-top: 15px;
+#questions-background {
+    background: var(--primary);
+    width: 100%;
     font-family: "Playfair Display", sans-serif;
 }
-#who-we-are-card {
-    justify-self: center; /*Moves the card to the center of the page horizontally*/
+
+.question {
+    font-size: 26px;
 }
 
-#mission-card {
-    margin-left: 177px;
-}
-
-#vision-card {
-    justify-self: left;
-    margin-left: 23px;
+.answer {
+    font-size: 24px;
 }
 
 footer {
