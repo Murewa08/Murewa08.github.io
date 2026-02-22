@@ -6,9 +6,10 @@ body {
     --primary: #F8D7E0;
     --secondary: #EDBABA;
     --secondary-2: #6B7A8F;
-    --secondary-3: #E9DAE9;
-    --secondary-4: #F6A67D;
-    --secondary-5: #FBF5EE;
+    --secondary-3: #F6A67D;
+    --secondary-4: #FBF5EE;
+    --secondary-5: #E2F67D;
+    --secondary-6: #D9D9D9;
 }
 
 header img {
@@ -49,36 +50,64 @@ header img {
 
 #page-content {
     /*height: 1265px;*/
-    font-family: "Poppins", sans-serif;
-    font-size: 45px;
-    margin-top: -5px;
-}
-
-main {
-    display: flex;
-    height: 975px;
-}
-
-#decor {
-    background: var(--secondary-5) ;
-    width: 535px;
-}
-
-#questions-background {
-    background: var(--primary);
-    width: 100%;
     font-family: "Playfair Display", sans-serif;
+    text-align: center;
+    margin-top: -5px;
+    height: 1080px;
+    background: linear-gradient(45deg, var(--primary), var(--secondary-4), var(--primary), var(--secondary-4), var(--primary), var(--secondary-4), var(--primary), var(--secondary-4), var(--primary), var(--secondary-4), var(--primary));
 }
 
-.question {
-    font-size: 26px;
-    font-weight: bold;
-    margin-left: 40px;
+#reviews-row-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-.answer {
+#reviews-row-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 220px;
+}
+
+.stars-row {
+    display: flex;
+    margin-top: -35px;
+    margin-left: 13px;
+}
+
+.stars {
+    font-size: 55px;
+    color: var(--secondary-5);
+}
+
+.gray-stars {
+    font-size: 55px;
+    color: var(--secondary-6);
+}
+
+
+
+.review {
+    background: white;
+    width: 377px;
+    height: 371px;
+    border-radius: 20px;
+    box-shadow: 0px 2px var(--secondary-2);
+    text-align: left;
+    /*margin-left: 10px;*/
+}
+
+.comment {
     font-size: 24px;
-    margin-left: 40px;
+    margin-top: -50px;
+    margin-left: 13px;
+}
+
+.customer {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 13px;
 }
 
 footer {
@@ -89,7 +118,7 @@ footer {
 }
 
 #contact-section {
-    background: var(--secondary-4);
+    background: var(--secondary-3);
     height: 197px;
     width: 1154px;
     border-radius: 15px;
