@@ -59,13 +59,13 @@ main {
     height: 975px;
 }
 
-#decor {
-    background: var(--secondary-5) ;
+/*#decor {
+    background: linear-gradient(45deg, var(--secondary-5), var(--primary), var(--secondary-5), var(--primary), var(--secondary-5), var(--primary), var(--secondary-5), var(--primary), var(--secondary-5)) ;
     width: 535px;
-}
+}*/
 
 #questions-background {
-    background: var(--primary);
+    background: linear-gradient(45deg, var(--primary), white, var(--primary), white, var(--primary), white, var(--primary), white, var(--primary));
     width: 100%;
     font-family: "Playfair Display", sans-serif;
 }
@@ -101,6 +101,7 @@ footer {
 
 .mini-header {
     font-size: 36px;
+    margin-top: 10px;
 }
 
 .info {
@@ -109,4 +110,24 @@ footer {
 
 .info-section {
     display: block;
+}
+
+#contact-us-section {
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border: 2px black solid;
+    text-align: center;
+}
+
+#headquarters-section {
+    border-bottom: 2px black solid;
+    border-top: 2px black solid;
+    text-align: center;
+}
+
+#social-media-section {
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 2px black solid;
+    text-align: center;
 }
