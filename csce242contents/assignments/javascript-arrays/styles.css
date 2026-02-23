@@ -29,12 +29,16 @@ main {
 
 ul {
     list-style-type: none;
-    margin-left: 350px;
+    margin-left: 20%;
 }
 
 li {
     justify-self: left;
     text-decoration: underline;
+}
+
+li:hover {
+    color: var(--secondary-3);
 }
 
 #video-box {
@@ -88,4 +92,11 @@ li {
 footer {
     text-align: center;
     margin-top: 100px;
+}
+
+@media (max-width: 1200px) {
+    body {
+        display: block;
+    }
+
 }

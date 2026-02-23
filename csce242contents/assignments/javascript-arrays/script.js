@@ -35,7 +35,7 @@ const disneySongLink = [];
   disneySongLink["The Family Madrigal from Encanto"] = "Yp5nPGWWMh4";
   disneySongLink["Un Poco Loco from Coco"] = "yg8116aeD7E";
 
-const  showHappySongs = () => {  
+const  showHappySongs = () => {
   resultDiv.innerHTML = "";
   videoDiv.innerHTML = "";
 
@@ -94,7 +94,7 @@ window.onload = () => {
   document.getElementById("btn-disney").onclick = showDisneySongs;
 };
 
-// toggle dropdown when button clicked
+// This toggles the dropdown menu when the button is clicked
 dropBtn.addEventListener('click', function (ev) {
   myDropdown.classList.toggle('show');
 });
