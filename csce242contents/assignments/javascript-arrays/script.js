@@ -2,8 +2,9 @@ const resultDiv = document.getElementById("result");
 const videoDiv = document.getElementById("video-box");
 const btnDisney = document.getElementById("btn-disney");
 const btnHappy = document.getElementById("btn-happy");
+const dropBtn = document.getElementById('dropbtn');
+const myDropdown = document.getElementById('myDropdown');
 
-// Use objects for mapping song title -> video id
 const happySongTitle = [
   "Happy by Pharrell Williams",
   "Don't Stop Me Now by Queen",
@@ -34,9 +35,8 @@ const disneySongLink = [];
   disneySongLink["The Family Madrigal from Encanto"] = "Yp5nPGWWMh4";
   disneySongLink["Un Poco Loco from Coco"] = "yg8116aeD7E";
 
-const  showHappySongs = () => {
-  btnDisney.style.display = "none"; // optional: hide other button
-  resultDiv.innerHTML = "";         // clear any previous list
+const  showHappySongs = () => {  
+  resultDiv.innerHTML = "";
   videoDiv.innerHTML = "";
 
   const ulElem = document.createElement("ul");
@@ -45,27 +45,24 @@ const  showHappySongs = () => {
     const title = happySongTitle[i];
     const liElem = document.createElement("li");
 
-    // create clickable paragraph (or use <button> if you prefer)
     const link = document.createElement("p");
     link.textContent = title;
     link.style.cursor = "pointer";
 
-    // click handler uses the song title to look up the ID
     link.onclick = () => {
-      const embededPortion = happySongLink[title]; // correct lookup
+      const embededPortion = happySongLink[title];
       videoDiv.innerHTML = `<iframe src="https://www.youtube.com/embed/${embededPortion}" frameborder="0" allowfullscreen></iframe>`;
       videoDiv.style.display = "block";
     };
 
-    liElem.appendChild(link); // put the clickable text inside the li
+    liElem.appendChild(link); 
     ulElem.appendChild(liElem);
   }
 
-  resultDiv.appendChild(ulElem); // append the whole list
+  resultDiv.appendChild(ulElem);
 }
 
-function showDisneySongs() {
-  btnHappy.style.display = "none";
+const showDisneySongs = () => {
   resultDiv.innerHTML = "";
   videoDiv.innerHTML = "";
   videoDiv.style.display = "none";
@@ -96,3 +93,8 @@ window.onload = () => {
   document.getElementById("btn-happy").onclick = showHappySongs;
   document.getElementById("btn-disney").onclick = showDisneySongs;
 };
+
+// toggle dropdown when button clicked
+dropBtn.addEventListener('click', function (ev) {
+  myDropdown.classList.toggle('show');
+});

@@ -42,49 +42,50 @@ li {
     width: 100%;
 }
 
-/*#btn-happy {
-    display: block;
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-#btn-disney {
-    display: block;
-}*/
 
-/*#mood-selector {
-    background: var(--secondary-4);
+#dropbtn {
+    background-color: var(--primary);
+    color: var(--secondary);
+    border: 1px var(--secondary) solid;
+    cursor: pointer;
+}
+
+/* dropdown menu*/
+.dropdown-content { 
+    display: none; 
+    position: absolute; 
+    left: 0; 
+    top: calc(100% + 6px); 
+    background: var(--primary); 
+    border: 1px solid rgba(0,0,0,0.06); 
+    padding: 8px; 
+    border-radius: 6px; 
+}
+
+.dropdown-content.show { 
+    display: block; 
+}
+
+
+#btn-happy {
+    background: var(--primary);
     border: 1px solid var(--secondary);
     color: var(--secondary);
 }
 
-#mood-options ul {
-    list-style-type: none;
-}
-
-#happy-songs ul {
-    list-style-type: none;
-    text-align: center;
-}
-
-#happy-songs a {
+#btn-disney {
+    background: var(--primary);
+    border: 1px solid var(--secondary);
     color: var(--secondary);
 }
 
-#happy-songs a:hover {
-    color: var(--secondary-3);
-}
-
-#disney-songs ul {
-    list-style-type: none;
-}
-
-#disney-songs a {
-    color: var(--secondary);
-}
-
-#disney-songs a:hover {
-    color: var(--secondary-3);
-}*/
 
 footer {
     text-align: center;
+    margin-top: 100px;
 }
