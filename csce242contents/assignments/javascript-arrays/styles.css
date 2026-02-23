@@ -29,11 +29,17 @@ main {
 
 ul {
     list-style-type: none;
+    margin-left: 350px;
 }
 
 li {
     justify-self: left;
     text-decoration: underline;
+}
+
+#video-box {
+    display: none;
+    width: 100%;
 }
 
 /*#btn-happy {
