@@ -27,7 +27,24 @@ main {
     text-align: center;
 }
 
-#mood-selector {
+ul {
+    list-style-type: none;
+}
+
+li {
+    justify-self: left;
+    text-decoration: underline;
+}
+
+/*#btn-happy {
+    display: block;
+}
+
+#btn-disney {
+    display: block;
+}*/
+
+/*#mood-selector {
     background: var(--secondary-4);
     border: 1px solid var(--secondary);
     color: var(--secondary);
@@ -60,7 +77,7 @@ main {
 
 #disney-songs a:hover {
     color: var(--secondary-3);
-}
+}*/
 
 footer {
     text-align: center;
