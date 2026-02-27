@@ -1,0 +1,21 @@
+:root {
+    --primary: #FFEDCC;
+    --secondary-1: #4D3200;
+    --secondary-2: #FFAE1A;
+}
+
+body {
+    background: var(--primary);
+}
+
+header {
+    text-align: center; /*This moves the text to the center horizontally*/
+}
+
+header h1 {
+    color: var(--secondary-1);
+}
+
+header h2 {
+    color: var(--secondary-2);
+}
