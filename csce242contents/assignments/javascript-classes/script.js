@@ -10,18 +10,39 @@ class Song{
         this.code = code;
     }
 
+    get item() {
+        const songSection = document.createElement("section");
+        songSection.classList.add("song");
+        const titleHeading = document.createElement("h3");
+        titleHeading.innerText = this.title;
+        const artistHeading = document.createElement("p");
+        artistHeading.innerText = this.artist;
+        songSection.appendChild(titleHeading);
+        songSection.appendChild(artistHeading);
+
+        songSection.appendChild(this.photo(this.coverArt));
+
+        return songSection;
+    }
+
+    photo(coverArt) {
+        const coverArtImage = document.createElement("img");
+        coverArtImage.src = "images/" + coverArt;
+        return coverArtImage;
+    }
 }
+
 window.onload = () => {
     const songsList = document.getElementById("songs-list");
     let songs = [];
 
-    songs.push(new Song("Blinding Lights ", "The Weeknd ", "After Hours ", 2020, "Synth-Pop ", "", ""));
-    songs.push(new Song("Rolling in the Deep ", "Adele ", "21 ", 2010, " Pop ", "", ""));
-    songs.push(new Song("Counting Stars ", "OneRepublic ", "Native ", 2013, " Pop Rock ", "", ""));
-    songs.push(new Song("Someone Like You ", "Adele ", "21 ", 2011, " Pop ", "", ""));
+    songs.push(new Song("Wild Wild West ", "Will Smith (feat. Dru Hill & Kool Moe Dee) ", "Wild Wild West: Music Inspired by Motion Picture", 1999, "Country Rap ", "Wild-Wild-West-cover.jpg", ""));
+    songs.push(new Song("Try Everything ", "Shakira ", "Zootopia (Original Motion Picture Soundtrack) ", 2016, " Pop ", "Try-Everything-cover.jpg", ""));
+    songs.push(new Song("We Don't Talk About Bruno ", "Carolina Gaitán, Mauro Castillo, Adassa, Rhenzy Feliz, Diane Guerrero, Stephanie Beatriz & the Cast of Encanto ", "Encanto (Original Motion Picture Soundtrack) ", 2021, "Musical Soundtrack ", "We-Don't-Talk-About-Bruno-cover.jpg", ""));
+    songs.push(new Song("I Just Can't Wait To Be King ", "JD McCrary (Young Simba), Shahadi Wright Joseph (Young Nala), and John Oliver (Zazu) ", "The Lion King (Original Motion Picture Soundtrack) ", 2019, " Musical Soundtrack ", "I-Just-Can't-Wait-To-Be-King-cover.webp", ""));
 
     for(let i in songs)
     {
-        console.log(`Title: ${songs[i].title},` + `Artist: ${songs[i].artist},` + `Album: ${songs[i].album},` + `Year: ${songs[i].year}, ` + `Genre: ${songs[i].genre}`);
+        songsList.append(songs[i].item);
     }
-}
+};
