@@ -3,6 +3,7 @@
     <head>
         <title>JavaScript Classes Assignment</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
     </head>
     <body>
         <header>
@@ -13,6 +14,19 @@
             <section id="songs-list">
                 
             </section>
+            <!-- The Modal -->
+            <div class="w3-container">
+                <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button>
+                <div id="id01" class="w3-modal">
+                    <div class="w3-modal-content">
+                        <div class="w3-container">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                            <p>Some text. Some text. Some text.</p>
+                            <p>Some text. Some text. Some text.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
     <script src="script.js"></script>
     </body>

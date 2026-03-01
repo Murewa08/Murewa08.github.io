@@ -38,11 +38,12 @@ window.onload = () => {
 
     songs.push(new Song("Wild Wild West ", "Will Smith (feat. Dru Hill & Kool Moe Dee) ", "Wild Wild West: Music Inspired by Motion Picture", 1999, "Country Rap ", "Wild-Wild-West-cover.jpg", ""));
     songs.push(new Song("Try Everything ", "Shakira ", "Zootopia (Original Motion Picture Soundtrack) ", 2016, " Pop ", "Try-Everything-cover.jpg", ""));
-    songs.push(new Song("We Don't Talk About Bruno ", "Carolina Gaitán, Mauro Castillo, Adassa, Rhenzy Feliz, Diane Guerrero, Stephanie Beatriz & the Cast of Encanto ", "Encanto (Original Motion Picture Soundtrack) ", 2021, "Musical Soundtrack ", "We-Don't-Talk-About-Bruno-cover.jpg", ""));
-    songs.push(new Song("I Just Can't Wait To Be King ", "JD McCrary (Young Simba), Shahadi Wright Joseph (Young Nala), and John Oliver (Zazu) ", "The Lion King (Original Motion Picture Soundtrack) ", 2019, " Musical Soundtrack ", "I-Just-Can't-Wait-To-Be-King-cover.webp", ""));
+    songs.push(new Song("We Don't Talk About Bruno ", "Stephanie Beatriz & the Cast of Encanto ", "Encanto (Original Motion Picture Soundtrack) ", 2021, "Musical Soundtrack ", "We-Don't-Talk-About-Bruno-cover.jpg", ""));
+    songs.push(new Song("I Just Can't Wait To Be King ", "JD McCrary, Shahadi Joseph, John Oliver ", "The Lion King (Original Motion Picture Soundtrack) ", 2019, " Musical Soundtrack ", "I-Just-Can't-Wait-To-Be-King-cover2.jpg", ""));
 
     for(let i in songs)
     {
         songsList.append(songs[i].item);
     }
+    
 };
