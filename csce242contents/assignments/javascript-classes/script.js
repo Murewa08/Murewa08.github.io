@@ -32,6 +32,11 @@ class Song{
     }
 }
 
+const imageClicked = () => {
+    const songsList = document.getElementById("songs-list");
+    songsList.style.display = "none";
+};
+
 window.onload = () => {
     const songsList = document.getElementById("songs-list");
     let songs = [];
@@ -46,4 +51,5 @@ window.onload = () => {
         songsList.append(songs[i].item);
     }
     
+    document.getElementsByClassName("song").onclick = imageClicked;
 };
