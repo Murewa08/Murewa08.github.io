@@ -264,22 +264,6 @@ footer {
 }
 
 @media (max-width: 950px) {
-    /*#page-content {
-        display: block;
-    }
-
-    .review {
-        justify-content: center;
-    }
-
-    #reviews-row-1 {
-        justify-content: center;
-    }
-
-    #reviews-row-2 {
-        align-content: center;
-    }*/
-    
     footer {
         height: 700px;
     }
@@ -294,7 +278,6 @@ footer {
 @media (max-width: 800px) {
     #page-content {
         margin-top: -15px;
-        /*margin-bottom: -5px;*/
         margin-right: -15px;
         display: block;
         justify-items: center;

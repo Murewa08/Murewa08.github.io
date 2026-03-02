@@ -160,7 +160,6 @@ footer {
     text-align: center;
 }
 
-/* --- Add these global layout helpers near the top of your CSS --- */
 * { 
     box-sizing: border-box; 
 }
@@ -175,25 +174,20 @@ html, body {
     min-height: 100vh; 
     display: flex; 
     flex-direction: column; 
-} /* wrapper: header + main + footer */
+}
 
 .main { 
     flex: 1 0 auto; 
-} /* main/content grows, footer stays at bottom */
+} 
 
 footer { 
     flex-shrink: 0; 
 }
 
-
-/* --- Responsive rules for <=1200px (replace your current media query) --- */
 @media (max-width: 1200px) {
-
-  /* Reviews: prefer content-driven size over fixed height */
   .review {
-    /* remove fixed height; allow content to define size */
     height: auto;
-    min-height: 220px;           /* optional: sensible minimum */
+    min-height: 220px;           
     margin: 10px 0;
     display: flex;
     flex-direction: column;
@@ -202,7 +196,6 @@ footer {
     padding: 0.75rem;
   }
 
-  /* Stars and comment spacing: avoid large negative margins */
   .stars-row {
     margin-top: 0.25rem;
   }
@@ -211,34 +204,23 @@ footer {
     margin-top: 0.25rem;
   }
 
-  /* Use flexbox sensibly for rows. If you want vertical stacking on small screens, use column */
   #reviews-row-1,
   #reviews-row-2 {
     display: block;
-    flex-direction: column;     /* stack cards vertically on small screens */
+    flex-direction: column;   
     gap: 0.75rem;
     margin-top: 0.5rem;
     align-items: stretch;
   }
 
-  /* Page content: switch to column layout on narrow screens */
   #page-content {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    justify-content: center; /* don't stretch with space-evenly which creates white space */
-    padding: 0 1rem;             /* keeps content from touching screen edges */
+    justify-content: center;
+    padding: 0 1rem;
   }
 
-  /* Contact section: avoid fixed heights and use max-width + auto height */
-  #contact-section {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    padding: 1rem;
-  }
-
-  /* The sub-sections: use borders and rounded corners but avoid forcing sizes */
   #contact-us-section {
     border-radius: 12px 12px 0 0;
     padding: 0.75rem;
@@ -256,15 +238,13 @@ footer {
   }
 
   
-  /* Footer: do NOT set a fixed height — use padding and flexible content */
   footer {
-    height: auto;               /* important: prevents giant whitespace */
-    padding: 1rem 1.25rem;      /* smaller padding on small screens */
+    height: auto; 
+    padding: 1rem 1.25rem;  
     display: block;
     line-height: 1.35;
   }
 
-  /* Optional: compress footer typography at very small widths */
   @media (max-width: 480px) {
     footer { 
         padding: 0.6rem 0.8rem; 
