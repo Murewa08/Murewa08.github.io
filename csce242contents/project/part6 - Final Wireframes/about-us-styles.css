@@ -1,0 +1,177 @@
+body {
+    margin: 0px;
+}
+
+:root {
+    --primary: #F8D7E0;
+    --secondary: #EDBABA;
+    --secondary-2: #6B7A8F;
+    --secondary-3: #E9DAE9;
+    --secondary-4: #F6A67D;
+    --secondary-5: #FBF5EE;
+}
+
+header img {
+    /*height: 656px;*/
+    width: 100%;
+}
+
+#navs {
+    background: var(--primary);
+    /*height: 91px;*/
+    display: flex;
+    color: #6B7A8F;
+    align-items: center;
+    font-family: "Playfair Display", sans-serif;
+}
+
+#navs a {
+    color: var(--secondary-2);
+    text-decoration: none;
+}
+
+#navs a:hover {
+    color: #AA336A;
+}
+
+#navs h2 {
+    font-size: 36px;
+}
+
+#navs ul {
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+    list-style-type: none;
+    margin-right: 20px;
+    font-size: x-large;
+}
+
+#page-content {
+    /*height: 1265px;*/
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 45px;
+    margin-top: -5px;
+}
+
+#who-we-are {
+    background: var(--primary);
+    height: 398px;
+    align-content: center;
+}
+
+#our-mission {
+    background: var(--secondary-3);
+    height: 369px;
+    align-content: center;
+    display: flex;    
+}
+
+#our-mission img {
+    width: 230px;
+    height: 345px;
+    border-radius: 500px;
+    margin-left: 162px;
+    margin-top: 12px;
+}
+
+#our-vision {
+    background: var(--primary);
+    height: 369px;
+    align-content: center;
+    display: flex;
+}
+
+#our-vision img {
+    width: 231px;
+    height: 346px;
+    border-radius: 50px;
+    margin-left: 200px;
+    margin-top: 12px;
+}
+.card-background {
+    background: var(--secondary-5);
+    border-radius: 20px;
+    box-shadow: 0px 3px black;
+    width: 673px;
+    height: 278px;
+    align-content: center;
+}
+
+.card-background p {
+    font-size: 32px;
+    font-family: "Poppins", sans-serif;
+    margin-top: -40px;
+}
+
+.card-background h4 {
+    font-size: 40px;
+    margin-top: 15px;
+    font-family: "Playfair Display", sans-serif;
+}
+#who-we-are-card {
+    justify-self: center; /*Moves the card to the center of the page horizontally*/
+}
+
+#mission-card {
+    margin-left: 177px;
+    align-self: center;
+}
+
+#vision-card {
+    justify-self: left;
+    margin-left: 23px;
+    align-self: center;
+}
+
+footer {
+    background: var(--secondary);
+    height: 277px;
+    /*margin-bottom: 0px;*/
+    align-content: center; /* Puts the contact section in the center of the footer*/
+}
+
+#contact-section {
+    background: var(--secondary-4);
+    height: 197px;
+    width: 1154px;
+    border-radius: 15px;
+    justify-self: center;
+    box-shadow: -3px 3px black;
+    font-family: "Playfair Display", sans-serif;
+    display: flex;
+}
+
+.mini-header {
+    font-size: 36px;
+    margin-top: 10px;
+}
+
+.info {
+    font-size: 24px;
+}
+
+.info-section {
+    display: block;
+}
+
+#contact-us-section {
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border: 2px black solid;
+    text-align: center;
+}
+
+#headquarters-section {
+    border-bottom: 2px black solid;
+    border-top: 2px black solid;
+    text-align: center;
+}
+
+#social-media-section {
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 2px black solid;
+    text-align: center;
+}
