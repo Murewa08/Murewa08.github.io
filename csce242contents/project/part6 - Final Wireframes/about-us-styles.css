@@ -47,6 +47,31 @@ header img {
     font-size: x-large;
 }
 
+/* Slideshow */
+#slideshow {
+    position:relative;
+}
+
+.arrow {
+    display:block;
+    font-size:5em;
+    text-decoration: none;
+    font-weight: 600;
+    position:absolute;
+    top:30%;
+    color:white;
+    background: transparent;
+    border: 0px transparent;
+}
+
+#previous{
+    left:5%;
+}
+
+#next {
+    right:5%;
+}
+
 #page-content {
     /*height: 1265px;*/
     font-family: "Poppins", sans-serif;
@@ -174,4 +199,114 @@ footer {
     border-top-right-radius: 15px;
     border: 2px black solid;
     text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .review {
+        height: 340px;
+        margin-top: 10px;
+        align-content: center;
+    }
+
+    .stars-row {
+        margin-top: -20px;
+    }
+
+    .comment {
+        margin-top: -60px;
+    }
+
+    #reviews-row-1 {
+        display: block;
+        margin-top: 3px;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+
+    #reviews-row-2 {
+        display: block;
+        margin-top: 3px;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+
+    #page-content {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #contact-section {
+        max-width: 80%;
+        height: 580px;
+        display: block;
+    }
+
+    #contact-us-section {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+    }
+
+    #headquarters-section {
+        border-left: 2px black solid;
+        border-right: 2px black solid;
+    }
+
+    #social-media-section {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 0px;
+    }
+
+    footer {
+        height: 500px;
+    }
+}
+
+@media (max-width: 950px) {
+    /*#page-content {
+        display: block;
+    }
+
+    .review {
+        justify-content: center;
+    }
+
+    #reviews-row-1 {
+        justify-content: center;
+    }
+
+    #reviews-row-2 {
+        align-content: center;
+    }*/
+    
+    footer {
+        height: 700px;
+    }
+
+    #contact-section {
+        /*margin-top: 15px;*/
+        height: 525px;
+    }
+    
+}
+
+@media (max-width: 800px) {
+    #page-content {
+        margin-top: -15px;
+        /*margin-bottom: -5px;*/
+        margin-right: -15px;
+        display: block;
+        justify-items: center;
+        height: 100%;
+    }
+
+    footer {
+    }
+
+    #contact-section {
+        margin-top: -30px;
+        height: 620px;
+
+    }
 }
