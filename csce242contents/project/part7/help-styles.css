@@ -1,0 +1,99 @@
+body {
+    margin: 0px;
+}
+
+:root {
+    --primary: #F8D7E0;
+    --secondary: #EDBABA;
+    --secondary-2: #6B7A8F;
+    --secondary-3: #E9DAE9;
+    --secondary-4: #F6A67D;
+    --secondary-5: #FBF5EE;
+}
+
+#navs {
+    background: var(--primary);
+    display: flex;
+    color: #6B7A8F;
+    align-items: center;
+    font-family: "Playfair Display", sans-serif;
+}
+
+#navs a {
+    color: var(--secondary-2);
+    text-decoration: none;
+}
+
+#navs a:hover {
+    color: #AA336A;
+}
+
+#navs h2 {
+    font-size: 36px;
+}
+
+#navs ul {
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+    list-style-type: none;
+    margin-right: 20px;
+    font-size: x-large;
+}
+
+#page-content {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 45px;
+    margin-top: -5px;
+}
+
+footer {
+    background: var(--secondary);
+    height: 277px;
+    align-content: center; /* Puts the contact section in the center of the footer*/
+}
+
+#contact-section {
+    background: var(--secondary-4);
+    height: 197px;
+    width: 1154px;
+    border-radius: 15px;
+    justify-self: center;
+    box-shadow: -3px 3px black;
+    font-family: "Playfair Display", sans-serif;
+    display: flex;
+}
+
+.mini-header {
+    font-size: 36px;
+    margin-top: 10px;
+}
+
+.info {
+    font-size: 24px;
+}
+
+.info-section {
+    display: block;
+}
+
+#contact-us-section {
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border: 2px black solid;
+    text-align: center;
+}
+
+#headquarters-section {
+    border-bottom: 2px black solid;
+    border-top: 2px black solid;
+    text-align: center;
+}
+
+#social-media-section {
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 2px black solid;
+    text-align: center;
+}
