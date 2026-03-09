@@ -41,59 +41,77 @@ body {
     font-size: x-large;
 }
 
-#page-content {
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-    font-size: 45px;
-    margin-top: -5px;
-}
-
-footer {
-    background: var(--secondary);
-    height: 277px;
-    align-content: center; /* Puts the contact section in the center of the footer*/
-}
-
-#contact-section {
-    background: var(--secondary-4);
-    height: 197px;
-    width: 1154px;
-    border-radius: 15px;
-    justify-self: center;
-    box-shadow: -3px 3px black;
-    font-family: "Playfair Display", sans-serif;
+main {
+    height: 700px;
+    background: #E8A9BE;
     display: flex;
+    justify-content: space-between;
 }
 
-.mini-header {
-    font-size: 36px;
-    margin-top: 10px;
+.box {
+    background: #FCF5E8;
+    border: 2px solid orange;
+    border-radius: 5px;
+    width: 500px;
+    height: 600px;
+    margin-top: 30px;
+    text-align: center;
 }
 
-.info {
+.box p {
     font-size: 24px;
 }
 
-.info-section {
+#contact-form-box {
+    margin-left: 100px;
+}
+
+#contact-form-box label {
+    font-size: 20px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
     display: block;
+    flex-direction: column;
 }
 
-#contact-us-section {
-    border-bottom-left-radius: 15px;
-    border-top-left-radius: 15px;
-    border: 2px black solid;
-    text-align: center;
+label {
+    margin-bottom: 5px;
 }
 
-#headquarters-section {
-    border-bottom: 2px black solid;
-    border-top: 2px black solid;
-    text-align: center;
+#contact-form input, #contact-form textarea {
+    font-size:16px;
+    font-family:Arial, Helvetica, sans-serif;
+    width:60%;
 }
 
-#social-media-section {
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
-    border: 2px black solid;
-    text-align: center;
+#contact-form textarea {
+    height:5em;
+}
+
+button {
+    background: #E8A9BE;
+    border-radius: 5px;
+    border: 2px solid black;
+    width:61%;
+    font-size:16px;
+}
+
+button:hover {
+    cursor: pointer;
+    background: #974E67;
+}
+
+#google-map {
+    margin-right: 100px;
+}
+
+#map {
+    height: 400px;
 }
