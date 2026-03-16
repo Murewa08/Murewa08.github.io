@@ -89,14 +89,9 @@ footer {
 }
 
 #contact-section {
-    background: var(--secondary-4);
-    height: 197px;
-    width: 1154px;
-    border-radius: 15px;
     justify-self: center;
-    box-shadow: -3px 3px black;
-    font-family: "Playfair Display", sans-serif;
     display: flex;
+    gap: 80px;
 }
 
 .mini-header {
@@ -110,24 +105,11 @@ footer {
 
 .info-section {
     display: block;
-}
-
-#contact-us-section {
-    border-bottom-left-radius: 15px;
-    border-top-left-radius: 15px;
+    text-align: center;
+    border-radius: 15px;
     border: 2px black solid;
-    text-align: center;
-}
-
-#headquarters-section {
-    border-bottom: 2px black solid;
-    border-top: 2px black solid;
-    text-align: center;
-}
-
-#social-media-section {
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
-    border: 2px black solid;
-    text-align: center;
+    font-family: "Playfair Display", sans-serif;
+    background: var(--secondary-4);
+    height: 200px;
+    width: 310px;
 }

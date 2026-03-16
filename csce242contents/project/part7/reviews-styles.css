@@ -13,13 +13,11 @@ body {
 }
 
 header img {
-    /*height: 656px;*/
     width: 100%;
 }
 
 #navs {
     background: var(--primary);
-    /*height: 91px;*/
     display: flex;
     color: #6B7A8F;
     align-items: center;
@@ -49,12 +47,14 @@ header img {
 }
 
 #page-content {
-    /*height: 1265px;*/
     font-family: "Playfair Display", sans-serif;
     text-align: center;
     margin-top: -5px;
-    height: 1080px;
-    background: linear-gradient(45deg, var(--primary), var(--secondary-4), var(--primary), var(--secondary-4), var(--primary), var(--secondary-4), var(--primary), var(--secondary-4), var(--primary), var(--secondary-4), var(--primary));
+    /*height: 1080px;*/
+    background: linear-gradient(45deg, var(--primary), var(--secondary-4), 
+    var(--primary), var(--secondary-4), var(--primary), var(--secondary-4), 
+    var(--primary), var(--secondary-4), var(--primary), var(--secondary-4), 
+    var(--primary), var(--secondary-4), var(--primary), var(--secondary-4));
 }
 
 #reviews-row-1 {
@@ -67,7 +67,7 @@ header img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-top: 220px;
+    margin-top: 120px;
 }
 
 .stars-row {
@@ -90,12 +90,12 @@ header img {
 
 .review {
     background: white;
+    margin: 15px;
     width: 377px;
     height: 371px;
     border-radius: 20px;
     box-shadow: 0px 2px var(--secondary-2);
     text-align: left;
-    /*margin-left: 10px;*/
 }
 
 .comment {
@@ -111,20 +111,14 @@ header img {
 
 footer {
     background: var(--secondary);
-    height: 277px;
-    /*margin-bottom: 0px;*/
     align-content: center; /* Puts the contact section in the center of the footer*/
 }
 
 #contact-section {
-    background: var(--secondary-3);
-    height: 197px;
-    width: 1154px;
-    border-radius: 15px;
     justify-self: center;
-    box-shadow: -3px 3px black;
-    font-family: "Playfair Display", sans-serif;
     display: flex;
+    gap: 80px;
+    margin: 30px;
 }
 
 .mini-header {
@@ -138,29 +132,15 @@ footer {
 
 .info-section {
     display: block;
-}
-
-#contact-us-section {
-    border-bottom-left-radius: 15px;
-    border-top-left-radius: 15px;
+    text-align: center;
+    border-radius: 15px;
     border: 2px black solid;
-    text-align: center;
+    font-family: "Playfair Display", sans-serif;
+    background: var(--secondary-3);
+    height: 200px;
+    width: 310px;
 }
-
-#headquarters-section {
-    border-bottom: 2px black solid;
-    border-top: 2px black solid;
-    text-align: center;
-}
-
-#social-media-section {
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
-    border: 2px black solid;
-    text-align: center;
-}
-
-/*@media (max-width: 1200px) {
+@media (max-width: 1200px) {
     .review {
         height: 340px;
         margin-top: 10px;
@@ -168,11 +148,11 @@ footer {
     }
 
     .stars-row {
-        margin-top: -20px;
+        margin-top: -10px;
     }
 
     .comment {
-        margin-top: -60px;
+        margin-top: 25px;
     }
 
     #reviews-row-1 {
@@ -195,67 +175,38 @@ footer {
     }
 
     #contact-section {
-        max-width: 80%;
-        height: 460px;
-        display: block;
-    }
-
-    #contact-us-section {
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-        border-bottom-left-radius: 0px;
-    }
-
-    #headquarters-section {
-        border-left: 2px black solid;
-        border-right: 2px black solid;
-    }
-
-    #social-media-section {
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-        border-top-right-radius: 0px;
-    }
-
-    footer {
-        height: 500px;
+        gap: 30px;
     }
 }
 
-@media (max-width: 950px) {
-    #page-content {
-        display: block;
-    }
+@media (max-width: 1020px) {
 
-    .review {
-        justify-content: center;
-    }
-
-    #reviews-row-1 {
-        justify-content: center;
-    }
-
-    #reviews-row-2 {
-        align-content: center;
-    }
-    
     footer {
-        height: 700px;
+        margin-top: -15px;
+    }
+
+    #page-content {
+        margin-top: -15px;
+        display: block;
+        justify-items: center; /* Moves all the comments to the center horizontally*/
     }
 
     #contact-section {
-        margin-top: 15px;
-        height: 555px;
+        display: block;
+        margin: 15px;
     }
-    
+
+    .info-section {
+        width: 400px;
+    }
 }
 
-@media (max-width: 800px) {
-    #page-content {
-        margin-top: -15px;
-        margin-bottom: 0px;
-        display: block;
-        justify-items: center;
-        height: 100%;
+@media (max-width: 610px) {
+    /*body {
+        margin-right: -40px;
     }
-}*/
+
+    footer {
+        background: green;
+    }*/
+}
