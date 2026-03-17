@@ -47,6 +47,20 @@ header img {
     font-size: x-large;
 }
 
+.toggle {
+    background: transparent;
+    color: var(--secondary-2);
+    border: 0px none transparent;
+    font-size: larger;
+    font-family: "Playfair Display", sans-serif;
+    display: none;
+}
+
+.toggle:hover {
+    cursor: pointer;
+    color: #AA336A;
+    align-self: flex-start;
+}
 #page-content {
     /*height: 1265px;*/
     font-family: "Poppins", sans-serif;
@@ -148,12 +162,20 @@ footer {
     }
     
     #navs ul {
-        display: block;
+        display: none;
         margin: 0;
         padding: 0;
         gap: 20px;
     }
 
+    #toggle-open {
+        display: block;
+    }
+
+    #toggle-close {
+        display: none;
+    }
+    
     #navs ul li {
         border-top: 1.5px solid gray;
     }

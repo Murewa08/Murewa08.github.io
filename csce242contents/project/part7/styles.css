@@ -46,6 +46,21 @@ header img {
     font-size: x-large;
 }
 
+.toggle {
+    background: transparent;
+    color: var(--secondary-2);
+    border: 0px none transparent;
+    font-size: larger;
+    font-family: "Playfair Display", sans-serif;
+    display: none;
+}
+
+.toggle:hover {
+    cursor: pointer;
+    color: #AA336A;
+    align-self: flex-start;
+}
+
 #page-content {
     /*height: 1265px;*/
     background: linear-gradient(0deg, #F8D7E0, #EDBABA, #F8D7E0);
@@ -150,8 +165,16 @@ footer a:hover {
         margin-top: auto;
     }
 
-    #navs ul {
+    #toggle-open {
         display: block;
+    }
+
+    #toggle-close {
+        display: none;
+    }
+
+    #navs ul {
+        display: none;
         margin: 0;
         padding: 0;
         gap: 20px;
