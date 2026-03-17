@@ -89,80 +89,74 @@ header img {
     margin-top: -5px;
 }
 
-#who-we-are {
-    background: var(--primary);
-    height: 398px;
-    align-content: center;
-}
-
-#our-mission {
-    background: var(--secondary-3);
-    height: 369px;
-    align-content: center;
-    display: flex;    
-}
-
-#our-mission img {
-    width: 230px;
-    height: 345px;
-    border-radius: 500px;
-    margin-left: 162px;
-    margin-top: 12px;
-}
-
-#our-vision {
-    background: var(--primary);
-    height: 369px;
-    align-content: center;
+#who-we-are-background {
+    background: linear-gradient(40deg, var(--primary), white, 
+    var(--primary), white, var(--primary), white, 
+    var(--primary), white, var(--primary), white, 
+    var(--primary), white, var(--primary), white, 
+    var(--primary), white);
+    height: 400px;
+    justify-content: center;
     display: flex;
+    border-top: 3px solid black;
 }
 
-#our-vision img {
-    width: 231px;
-    height: 346px;
-    border-radius: 50px;
-    margin-left: 200px;
-    margin-top: 12px;
+#our-mission-background {
+    background: linear-gradient(40deg, var(--secondary-3), white, 
+    var(--secondary-3), white, var(--secondary-3), white, 
+    var(--secondary-3), white, var(--secondary-3), white, 
+    var(--secondary-3), white, var(--secondary-3), white, 
+    var(--secondary-3), white);
+    height: 400px;
+    justify-content: center;
+    display: flex;
+    border-top: 3px solid black;    
 }
-.card-background {
+
+#our-vision-background {
+    background: linear-gradient(40deg, var(--primary), white, 
+    var(--primary), white, var(--primary), white, 
+    var(--primary), white, var(--primary), white, 
+    var(--primary), white, var(--primary), white, 
+    var(--primary), white);
+    height: 400px;
+    justify-content: center;
+    display: flex;
+    border-top: 3px solid black;
+}
+
+/*#mission-card {
+    align-content: center;
+}
+
+#vision-card {
+    align-self: center;
+}*/
+
+.card {
     background: var(--secondary-5);
     border-radius: 20px;
-    box-shadow: 0px 3px black;
+    border: 3px solid black;
     width: 673px;
     height: 278px;
-    align-content: center;
+    margin-top: 20px;
+    
 }
 
-.card-background p {
+.card p {
     font-size: 32px;
     font-family: "Poppins", sans-serif;
     margin-top: -40px;
 }
 
-.card-background h4 {
+.card h4 {
     font-size: 40px;
-    margin-top: 15px;
+    margin-top: 20px;
     font-family: "Playfair Display", sans-serif;
-}
-#who-we-are-card {
-    justify-self: center; /*Moves the card to the center of the page horizontally*/
-}
-
-#mission-card {
-    margin-left: 177px;
-    align-self: center;
-}
-
-#vision-card {
-    justify-self: left;
-    margin-left: 23px;
-    align-self: center;
 }
 
 footer {
     background: var(--secondary);
-    height: 277px;
-    /*margin-bottom: 0px;*/
     align-content: center; /* Puts the contact section in the center of the footer*/
 }
 
@@ -170,6 +164,7 @@ footer {
     justify-self: center;
     display: flex;
     gap: 80px;
+    margin: 30px;
 }
 
 .mini-header {
@@ -190,4 +185,68 @@ footer {
     background: var(--secondary-4);
     height: 200px;
     width: 310px;
+}
+
+@media (max-width: 1200px) {
+
+    #page-content {
+        margin-top: -15px;
+    }
+
+    #contact-section {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1020px) {
+
+    #navs {
+        display: block;
+        text-align: center;
+        margin-top: -30px;
+    }
+
+    #navs ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+        gap: 20px;
+    }
+
+    #navs ul li {
+        border-top: 1.5px solid gray;
+    }
+
+    footer {
+        margin-top: -15px;
+    }
+
+    #page-content {
+        margin-top: -15px;
+    }
+
+    #contact-section {
+        display: block;
+        margin: 15px;
+    }
+
+    .info-section {
+        width: 400px;
+    }
+}
+
+@media (max-width: 710px) {
+    body {
+        width: fit-content;
+    }
+
+    .card {
+        height: 350px;
+        width: 450px;
+        margin-top: 15px;
+    }
+    
+    .card h4 {
+        margin-top: 7px;
+    }
 }

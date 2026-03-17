@@ -158,7 +158,7 @@ footer a:hover {
     }
 
     #navs ul li {
-        border: 1.5px solid white;
+        border-top: 1.5px solid gray;
     }
 
     .destinations-row {

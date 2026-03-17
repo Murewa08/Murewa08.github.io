@@ -56,7 +56,6 @@ header img {
 
 main {
     display: flex;
-    height: 975px;
 }
 
 /*#decor {
@@ -83,7 +82,6 @@ main {
 
 footer {
     background: var(--secondary);
-    height: 277px;
     /*margin-bottom: 0px;*/
     align-content: center; /* Puts the contact section in the center of the footer*/
 }
@@ -112,4 +110,51 @@ footer {
     background: var(--secondary-4);
     height: 200px;
     width: 310px;
+}
+
+@media (max-width: 1200px) {
+    #contact-section {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1020px) {
+    footer {
+        margin-top: -23px;
+    }
+
+    #page-content {
+        margin-top: -30px;
+        display: block;
+        justify-items: center; /* Moves all the comments to the center horizontally*/
+    }
+
+    #contact-section {
+        display: block;
+        margin: 15px;
+    }
+
+    .info-section {
+        width: 400px;
+    }
+}
+
+@media (max-width: 610px) {
+
+    #navs {
+        display: block;
+        text-align: center;
+        margin-top: -30px;
+    }
+    
+    #navs ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+        gap: 20px;
+    }
+
+    #navs ul li {
+        border-top: 1.5px solid gray;
+    }
 }

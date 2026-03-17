@@ -42,7 +42,8 @@ body {
 }
 
 main {
-    height: 700px;
+    /*height: 700px;*/
+    margin-top: -32px;
     background: #E8A9BE;
     display: flex;
     justify-content: space-between;
@@ -52,7 +53,7 @@ main {
     background: #FCF5E8;
     border: 2px solid orange;
     border-radius: 5px;
-    width: 500px;
+    width: 400px;
     height: 600px;
     margin-top: 30px;
     text-align: center;
@@ -114,4 +115,17 @@ button:hover {
 
 #map {
     height: 400px;
+}
+
+@media (max-width: 1020px) {
+    main {
+        display: block;
+        justify-content: space-evenly;
+    }
+
+    .box {
+        justify-self: center;
+        /*margin-top: 10px;*/
+        height: 550px;
+    }
 }
