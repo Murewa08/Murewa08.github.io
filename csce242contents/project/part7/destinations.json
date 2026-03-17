@@ -40,12 +40,5 @@
     "country": "Australia",
     "img_name": "images/sydney.jpg",
     "short_desc": "Harbour city with beaches and great food."
-  },
-  {
-    "_id": 7,
-    "name": "Paris",
-    "country": "France",
-    "img_name": "images/paris.jpg",
-    "short_desc": "Art, cuisine, and romance."
   }
 ]
