@@ -104,6 +104,7 @@ footer {
     justify-self: center;
     display: flex;
     gap: 80px;
+    margin: 30px;
 }
 
 .mini-header {
